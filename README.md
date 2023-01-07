@@ -1,4 +1,4 @@
-# Random-Sentence-Genetator
+# textgen
 a python module that uses nouns and adjectives copied from :
 https://github.com/ZackFreedman/Singularitron/blob/master/SingularitronFirmware/flavortext.h
 
