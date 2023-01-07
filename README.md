@@ -4,6 +4,8 @@ https://github.com/ZackFreedman/Singularitron/blob/master/SingularitronFirmware/
 
 guide:
 1. add to the rest of your python packages
-2. import flavorText
-3. flavorText.the_thing()
+2. also have random installed
+3. import flavorText
+4. flavorText.the_thing(verb, noun)
 
+you can set verb or noun to a number or leave them blank (like noun="") to pick a random number
