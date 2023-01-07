@@ -1,5 +1,5 @@
-import random 
-verbs = ["Align",
+import random
+verbList = ["Align",
   "Build",
   "Calibrat",
   "Instanc",
@@ -219,9 +219,7 @@ verbs = ["Align",
   "Arrest",
   "Bury"]
 
-VerbCount = 100
-
-nouns = ["content",
+nounList = ["content",
   "your mom",
   "the shmoo",
   "API",
@@ -331,7 +329,13 @@ nouns = ["content",
   "variables",
   "IP address"]
 
-def the_thing():
-    print(verbs[random.randint(0,99)] + "ing " + nouns[random.randint(0,99)])
+def the_thing(verb, noun):
+    if verb == "" and noun == "":
+        print(verbList[random.randint(0,99)] + "ing " + nounList[random.randint(0,99)])
+    elif noun == "":
+        print(verbList[verb] + "ing " + nounList[random.randint(0,99)])
+    elif verb == "":
+        print(verbList[random.randint(0,99)] + "ing " + nounList[noun])
+    else:
+        print(verbList[verb] + "ing " + nounList[noun])
     return
-the_thing()
